@@ -7,6 +7,7 @@ public class VehiculoDto {
 	//Atributos
 	
 	long idVehiculo;
+	
 	String matriculaVehiculo="aaaaa";
 	LocalDate fechaMatriculacion=LocalDate.now();
 	boolean esHistorico=false;
@@ -36,6 +37,12 @@ public class VehiculoDto {
 	}
 	public void setEsHistorico(boolean esHistorico) {
 		this.esHistorico = esHistorico;
+	}
+	
+	@Override
+	public String toString() {
+		return "VehiculoDto [matriculaVehiculo=" + matriculaVehiculo + ", fechaMatriculacion=" + fechaMatriculacion
+				+ "]";
 	}
 
 }

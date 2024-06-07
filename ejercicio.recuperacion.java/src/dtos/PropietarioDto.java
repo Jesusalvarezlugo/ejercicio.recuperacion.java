@@ -7,6 +7,7 @@ public class PropietarioDto {
 	//Atributos
 	
 	long idPropietario;
+	
 	String dniPropietario="aaaaa";
 	LocalDate fechaCompra=LocalDate.now();
 	String matricula="aaaaa";
@@ -36,5 +37,10 @@ public class PropietarioDto {
 	}
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
+	}
+	
+	@Override
+	public String toString() {
+		return "PropietarioDto [dniPropietario=" + dniPropietario + ", fechaCompra=" + fechaCompra + "]";
 	}
 }

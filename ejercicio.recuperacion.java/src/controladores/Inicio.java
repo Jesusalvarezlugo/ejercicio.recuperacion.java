@@ -46,6 +46,16 @@ public class Inicio {
 		
 		fi.leerFichero("C:\\Users\\Jesús\\workspace-recuperacion-java\\ejercicio.recuperacion.java\\vehiculosYpropietarios.txt");
 		
+		for(PropietarioDto propietario:listaPropietarios) {
+			
+			System.out.println(propietario.toString());
+		}
+		
+		for(VehiculoDto vehiculo: listaVehiculos) {
+			
+			System.out.println(vehiculo.toString());
+		}
+		
 
 	}
 
